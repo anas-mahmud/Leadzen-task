@@ -1,25 +1,11 @@
-import { useEffect, useState } from 'react';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import User from './components/User';
-
+import router from './Router/Routers';
 function App() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(res => res.json())
-      .then(data => setUsers(data))
-  }, [])
 
   return (
     <div className="App">
-      {
-        users.map(user => <User
-          key={user.id}
-          user={user}
-        ></User>)
-      }
-
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
