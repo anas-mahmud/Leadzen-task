@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 
 const UserDetails = () => {
-    const { id, name, email, address, phone, website, company } = useLoaderData();
+    const { name, email, address, phone, website, company } = useLoaderData();
 
     return (
         <div className='bg-zinc-200 shadow-lg mt-10 py-10 px-20 rounded-lg'>
