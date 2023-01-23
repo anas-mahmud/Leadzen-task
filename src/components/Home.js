@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from './Header';
 import User from './User';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
     }, [])
     return (
         <div>
+            <Header></Header>
             {
                 users.map(user => <User
                     key={user.id}

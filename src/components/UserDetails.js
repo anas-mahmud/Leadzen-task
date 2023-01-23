@@ -6,8 +6,8 @@ const UserDetails = () => {
 
     return (
         <div className='bg-zinc-200 shadow-lg mt-10 py-10 px-20 rounded-lg'>
-            <div className='flex justify-between m-5' data-aos="fade-down" data-aos-duration="1500">
-                <h2 className='text-lg font-medium flex items-center justify-center'>Hello Travels</h2>
+            <div className='lg:flex justify-between m-5' data-aos="fade-down" data-aos-duration="1500">
+                <h2 className='text-lg font-medium flex sm:flex-row items-center justify-center'>Hello Travels</h2>
                 <div>
                     <h1 className='text-lg font-medium'>Contact</h1>
                     <p>{name}</p>
@@ -38,7 +38,7 @@ const UserDetails = () => {
                     <p><span className='font-medium'>BS:</span> {company.bs}</p>
                 </div>
 
-                <div className='flex flex-row gap-96 mt-8'>
+                <div className='flex lg:flex-row sm:flex-col lg:gap-96 sm:gap-5 mt-8'>
                     <div className='flex flex-col gap-5'>
                         <div data-aos="fade-up" data-aos-duration="1500">
                             <h2 className='text-lg font-medium'>Contact Person</h2>
