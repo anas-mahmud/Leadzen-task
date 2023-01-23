@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const User = ({ user }) => {
     console.log(user);
-    const { name, address } = user;
+    const { id, name, address } = user;
 
     return (
         <div className='grid grid-cols-5 m-5 shadow-lg py-10 px-20 bg-zinc-200 rounded-lg'>
@@ -20,7 +21,7 @@ const User = ({ user }) => {
                 <p>{address.city}</p>
             </div>
             <div>
-                <button className="btn btn-primary">Details</button>
+                <Link to={`/userDetails/${id}`}><button className="btn btn-primary">Details</button></Link>
             </div>
         </div>
     );
